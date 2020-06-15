@@ -31,4 +31,16 @@ steps:
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
+- task: FortifyOnDemandStatic@5
+  inputs:
+    FortifyProjects: '$(Build.SourcesDirectory)'
+    BSIToken: 'eyJ0ZW5hbnRJZCI6MTI2OTEsInRlbmFudENvZGUiOiJIQ0xfMTc1NV9GTUFfNDcwOTgzNDQ2IiwicmVsZWFzZUlkIjoxMDQyMDcsInBheWxvYWRUeXBlIjoiQU5BTFlTSVNfUEFZTE9BRCIsImFzc2Vzc21lbnRUeXBlSWQiOjE0LCJ0ZWNobm9sb2d5VHlwZSI6Ii5ORVQiLCJ0ZWNobm9sb2d5VHlwZUlkIjoxLCJ0ZWNobm9sb2d5VmVyc2lvbiI6IjMuMCIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjMsImF1ZGl0UHJlZmVyZW5jZSI6Ik1hbnVhbCIsImF1ZGl0UHJlZmVyZW5jZUlkIjoxLCJpbmNsdWRlVGhpcmRQYXJ0eSI6ZmFsc2UsImluY2x1ZGVPcGVuU291cmNlQW5hbHlzaXMiOmZhbHNlLCJwb3J0YWxVcmkiOiJodHRwczovL3RyaWFsLmZvcnRpZnkuY29tLyIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLnRyaWFsLmZvcnRpZnkuY29tIiwic2NhblByZWZlcmVuY2UiOiJTdGFuZGFyZCIsInNjYW5QcmVmZXJlbmNlSWQiOjF9'
+    APIAuthenticationType: '2'
+    Username: 'vandanamehta0485@gmail.com'
+    PersonalAccessTokenSecret: 'VTJrOFF3amIiYk5fNkxURmVDUFBsRy5rTVUwT3k30'
+    TenantID: 'HCL_1755_FMA_470983446'
+    EntitlementPreference: '0'
+    InProgressScanActionType: '0'
+    RemediationScanPreference: '2'
+    PolicyFailAction: '1'
 
